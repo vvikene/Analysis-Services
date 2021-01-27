@@ -26,3 +26,9 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+  
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'BismNormalizer'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
